@@ -176,7 +176,7 @@ img {
 
 /* start home */
 #home {
-  background: url("../images/coracao.jpg") no-repeat;
+  background: url(../images/coracao.jpg) no-repeat;
   background-size: cover;
   color: #fff;
   margin-top: 70px;
