@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Maná das Ruas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- google font -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="shortcut icon" href="images/fotologo-removebg-preview (3).png" type="image/x-icon">
+  </head>
+  <body>
+    <style>
+      .icone {
+        width: 50px;
+        height: auto;
+        fill: #822b2d;
+      }
+
+      /* Botão para abrir o modal */
+      .donate-btn {
+            padding: 10px 20px;
+            background-color: #822b2d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /* Estilos do modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Conteúdo do modal */
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            width: 300px;
+        }
+
+        /* Botão para fechar o modal */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        /* Estilos do QR code e das chaves Pix */
+        .qr-code {
+            margin: 20px 0;
+        }
+
+        .pix-key {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .doar{
+          margin-left: 250px;
+        }
+    </style>
+
+    <!-- start preloader -->
+    <div class="preloader">
+      <div class="sk-spinner sk-spinner-rotating-plane"></div>
+    </div>
+    <!-- end preloader -->
+    <!-- start navigation -->
+    <nav
+      class="navbar navbar-default navbar-fixed-top templatemo-nav"
+      role="navigation"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a style="margin-top: 15px;" href="#" class="navbar-brand"
+            ><img
+              src="images/fotologo-removebg-preview (4).png"
+              alt="Maná das ruas logo"
+              width="50%"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right text-uppercase">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#feature">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <!-- <li><a href="#contact">Contato</a></li> -->
+            <li class="doar"><a href="javascript:void(0);" onclick="document.getElementById('donationModal').style.display='flex'">Doar</a></li>
+
+            <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('donationModal').style.display='none'">&times;</span>
+            <h2>Faça sua Doação</h2>
+            <div class="qr-code">
+                <img src="caminho_para_o_qr_code.png" alt="QR Code do Pix" width="150">
+            </div>
+            <div class="pix-key">
+                <strong>Email:</strong> seu-email@exemplo.com
+            </div>
+            <div class="pix-key">
+                <strong>Celular:</strong> +55 (XX) XXXXX-XXXX
+            </div>
+        </div>
+    </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation -->
+    <!-- start home -->
+
+<style>
+  #home{
+    height: 100vh;
+  }
+</style>
+
+<section id="home">
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
+          <div class="main-content">
+            <!-- Início da seção de doação -->
+            <div class="donation-section">
+              <div class="donation-box">
+                <h2>Doe e faça parte da transformação</h2>
+                <div class="donation-options">
+                  <button>R$10,00</button>
+                  <button>R$30,00</button>
+                  <button>R$70,00</button>
+                  <button>R$150,00</button>
+                  <button>R$300,00</button>
+                  <button>Outro Valor</button>
+                </div>
+                <p>Sua doação mensal de R$30 reais, em um ano, custeia a compra de livros didáticos a 3 Jovens Universitários</p>
+                <button class="donate-now">Doar R$30</button>
+              </div>
+            </div>
+            <!-- Fim da seção de doação -->
+
+            <div class="text-section">
+              <img
+                src="./images/fotologo-removebg-preview (3).png"
+                class="img-responsive"
+                alt="home img"
+              />
+              <h4 style="text-transform: uppercase; text-align: center">
+                Somos um grupo sem fins lucrativos dedicado a transformar vidas por meio de doações e trabalho voluntário. Nossa missão vai além de oferecer alimentação: buscamos proporcionar cuidado, atenção e amor aos moradores de rua, oferecendo suporte e dignidade a cada um deles.
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.text-section {
+  width: 45%;
+  margin-left: 50px;
+}
+
+.donation-section {
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+.donation-box {
+  text-align: center;
+}
+
+.donation-options button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donation-options button:hover {
+  background-color: #555555;
+}
+
+.donate-now {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donate-now:hover {
+  background-color: #c0392b;
+}
+
+</style>
+
+    <!-- end home -->
+    <!-- start divider -->
+    <section id="divider">
+      <h2 style="margin-bottom: 80px;">NOSSAS AÇÕES</h2>
+      <div class="container">
+        <div class="col-md-1"></div>
+        <div class="row g-4"> <!-- Adiciona espaçamento entre as colunas -->
+          <!-- Primeira linha com dois itens -->
+          <div
+            style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); height: 300px;"
+            class="col-md-5 wow fadeInUp templatemo-box"
+            data-wow-delay="0.3s"
+          >
+            <i>
+              <img
+                style="margin-top: 15px"
+                class="icone"
+                src="./images/hot-soup.png"
+                alt=""
+              />
+            </i>
+            <h3 class="text-uppercase">Dia do Sopão</h3>
+            <hr>
+            <p style="font-size: 15px; font-weight: 500; text-align: center">
+              Toda segunda-feira, nossa comunidade se une para fazer a diferença
+              com o Dia do Sopão. Participe ajudando a alimentar aqueles que
+              precisam.
+            </p>
+          </div>
+         
+          <div
+            style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); height: 300px;"
+            class="col-md-5 wow fadeInUp templatemo-box"
+            data-wow-delay="0.3s"
+          >
+            <i>
+              <img
+                style="margin-top: 15px"
+                class="icone"
+                src="./images/restaurant.png"
+                alt=""
+              />
+            </i>
+            <h3 class="text-uppercase">Dia da Quentinha</h3>
+            <hr>
+            <p style="font-size: 15px; font-weight: 500; text-align: center">
+              Toda quinta-feira, realizamos o Dia da Quentinha para oferecer
+              calor e conforto aos necessitados. Junte-se a nós nessa corrente
+              do bem!
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-1"></div>
+        <div class="row g-4"> <!-- Segunda linha com dois itens -->
+          <div
+            style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); height: 300px;"
+            class="col-md-5 wow fadeInUp templatemo-box"
+            data-wow-delay="0.3s"
+          >
+            <i>
+              <img
+                style="margin-top: 15px"
+                class="icone"
+                src="images/criancas (2).png"
+                alt=""
+              />
+            </i>
+            <h3 class="text-uppercase">Dia das Crianças</h3>
+            <hr>
+            <p style="font-size: 15px; font-weight: 500; text-align: center">
+              Se você tem brinquedos novos ou em bom estado, além de roupas infantis, traga-os para nossa arrecadação. Sua doação ilumina o sorriso de uma criança e traz alegria para elas. Com seu apoio, podemos garantir que mais crianças tenham um Dia das Crianças especial e cheio de felicidade.
+            </p>
+          </div>
+           <div
+            style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); height: 300px;"
+            class="col-md-5 wow fadeInUp templatemo-box"
+            data-wow-delay="0.3s"
+          >
+            <i>
+              <img
+                style="margin-top: 15px"
+                class="icone"
+                src="./images/christmas-tree-red.png"
+                alt=""
+              />
+            </i>
+            <h3 class="text-uppercase">Natal Solidário</h3>
+            <hr>
+            <p style="font-size: 15px; font-weight: 500; text-align: center">
+             Arrecadamos cestas básicas para famílias em situação de vulnerabilidade. Doe alimentos não perecíveis e itens essenciais para transformar o Natal de muitas pessoas. Sua contribuição faz toda a diferença e traz esperança e dignidade para aqueles que mais precisam.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    
+    <!-- end divider -->
+
+    <!-- start feature -->
+    <section id="feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+            <h3 class="text-uppercase">Oque é o Maná?  <i
+              ><img
+                style="margin-top: 15px"
+                class="icone"
+                src="./images/biblia.png"
+                alt=""
+            /></i></h3>
+            <p style="font-size: 17px; font-weight: 500; text-align: left">
+              <strong> Maná </strong> é um alimento milagroso mencionado na
+              Bíblia, <strong>fornecido por Deus</strong> aos israelitas no
+              deserto. Simboliza sustento divino e ajuda essencial.
+            </p>
+            <p style="font-size: 17px; font-weight: 500; text-align: left">
+              Em nosso grupo, <strong>Maná das Ruas</strong>, usamos essa ideia
+              para representar nosso compromisso em oferecer apoio e dignidade a
+              pessoas em situação de rua.
+            </p>
+          </div>
+            <img 
+            style="padding-left: 50px;" src="images/fotologo-removebg-preview (3).png" alt="Logo Maná" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end feature -->
+
+    <!-- start feature1 -->
+    <section id="feature1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <img
+            style="border-radius:5px;"
+            src="./images/fotogrupo2.jpeg"
+            class="img-responsive"
+            alt="feature img"
+          />
+          </div>
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            
+            <h3 class="text-uppercase">Sobre o Grupo </h3>
+            <p style="font-size: 17px; font-weight: 500; text-align: left">
+              Um grupo de jovens que esta fazendo a diferença na vida de moradores em situação de rua, oferecendo alimentos, roupas e apoio essencial. Com dedicação e carinho, eles transformam o cotidiano dessas pessoas, proporcionando não só itens necessários, mas também um acolhimento humano.
+            </p>
+            <p style="font-size: 17px; font-weight: 500; text-align: left">
+              Quer se juntar a essa missão? Doe itens essenciais ou participe das atividades. Cada ajuda é valiosa!
+              podemos criar um impacto positivo e oferecer mais esperança!
+            </p>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<section id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow bounceIn">
+        <h2 class="text-uppercase">Ajude Quem Precisa</h2>
+      </div>
+      <div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+        <div
+          style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)"
+          class="pricing text-uppercase"
+        >
+          <div class="pricing-title">
+            <h4>Sopão Solidário</h4>
+            <span style="font-size: 10px;">oque precisamos?</span>
+          </div>
+          <ul style="font-size: 17px; font-weight: 400">
+            <li>Macarrão</li>
+            <hr>
+            <li>Feijão</li>
+            <hr>
+            <li>arroz</li>
+            <hr>
+            <li>salsicha</li>
+            <br>
+          </ul>
+          <!--<button class="btn btn-primary text-uppercase">Sign up</button>-->
+        </div>
+      </div>
+      <div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+        <div
+          style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)"
+          class="pricing active text-uppercase"
+        >
+          <div class="pricing-title">
+            <h4>Dia da quentinha</h4>
+            <span style="font-size: 10px;">oque precisamos?</span>
+          </div>
+          <ul style="font-size: 17px; font-weight: 400">
+            <li>Macarrão</li>
+            <hr>
+            <li>Feijão</li>
+            <hr>
+            <li>arroz</li>
+            <hr>
+            <li>salsicha</li>
+            <br>
+          </ul>
+          <!--<button class="btn btn-primary text-uppercase">Sign up</button>-->
+        </div>
+      </div>
+      <div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+        <div
+          style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)"
+          class="pricing text-uppercase"
+        >
+          <div class="pricing-title">
+            <h4>Dia das crianças</h4>
+            <span style="font-size: 10px;">oque precisamos?</span>
+          </div>
+          <ul style="font-size: 17px; font-weight: 400">
+            <li>brinquedos</li>
+            <hr>
+            <li>Roupas em bom estado</li>
+            <hr>
+            <li>Livros infantis</li>
+            <hr>
+            <li>Material escolar</li>
+            <br>
+          </ul>
+          <!--<a href="https://wa.me/88997174664"><button class="btn btn-primary text-uppercase">fale comigo</button></a>-->
+        </div>
+        <br>
+      </div>
+    </div>
+    
+  </div>
+  </div>
+</section>
+    <!-- end pricing -->
+
+    <!-- start download -->
+
+    <!-- end download -->
+    <section id="contact">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <h2 class="text-uppercase">Contact Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation.
+              </p>
+              <address>
+                <p>
+                  <i class="fa fa-map-marker"></i> Rua Eva 235, Expectativa, Sobral-CE.
+                </p>
+                <p><i class="fa fa-phone"></i> (88)997174664</p>
+                <p><i class="fa fa-envelope-o"></i> <!--ADICIONE O E-MAIL AQUI--></p>
+              </address>
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="contact-form">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 >Redes sociais</h3>
+            <div class="social-icons" style="display: flex; justify-content: center; gap: 15px;">
+              <a href="https://www.facebook.com/mana.dasruas/photos?locale=pt_BR" target="_blank" class="social-icon" aria-label="Facebook" style="display: inline-block; ">
+                <img 
+                  src="images/facebook.png" 
+                  alt="Facebook" 
+                  style="width: 40px; height: 40px; object-fit: contain;"
+                  onmouseover="this.style.opacity='0.8'" 
+                  onmouseout="this.style.opacity='1'"
+                >
+              </a>
+              
+              <a href="https://www.instagram.com/mana.das.ruas/" target="_blank" class="social-icon" aria-label="Instagram" style="display: inline-block;">
+                <img 
+                  src="images/instagram.png" 
+                  alt="Instagram" 
+                  style="width: 40px; height: 40px; object-fit: contain;"
+                  onmouseover="this.style.opacity='0.8'" 
+                  onmouseout="this.style.opacity='1'"
+                >
+              </a>
+              <a href="https://wa.me/88997174664" target="_blank" class="social-icon" aria-label="Instagram" style="display: inline-block;">
+                <img 
+                  src="images/whatsapp.png" 
+                  alt="Instagram" 
+                  style="width: 40px; height: 40px; object-fit: contain;"
+                  onmouseover="this.style.opacity='0.8'" 
+                  onmouseout="this.style.opacity='1'"
+                >
+              </a>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    
+<style>
+  .footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #ddd;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #ddd;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-credits {
+  font-size: 14px;
+}
+
+.footer-credits p {
+  margin: 5px 0;
+}
+
+.footer-credits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-credits li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-credits a {
+  color: #d6ae57;
+  text-decoration: none;
+}
+
+.footer-credits a:hover {
+  text-decoration: underline;
+}
+
+</style>
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+          </div>
+          <div class="footer-social">
+            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-pinterest"></i></a>
+          </div>
+          <div class="footer-credits">
+            <p>&copy; 2024 mana das ruas Todos os direitos reservados.</p>
+            <p>Desenvolvido por alunos do senac:</p>
+            <ul>
+              <li>
+                <a href="https://github.com/ErmesonDouglas" target="_blank"
+                  >Ermeson</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/wesley-vitorino-08a0b0228/"
+                  target="_blank"
+                  >Wesley</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/breno-aj" target="_blank">Breno</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script>
+      // Fechar o modal ao clicar fora dele
+      window.onclick = function(event) {
+          if (event.target == document.getElementById('donationModal')) {
+              document.getElementById('donationModal').style.display = 'none';
+          }
+      }
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
