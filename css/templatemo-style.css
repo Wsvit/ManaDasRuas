@@ -430,23 +430,3 @@ footer {
 .social-icon:hover {
   color: #007bff; /* Altere a cor do hover conforme necessário */
 }
-.main-content {
-  display: flex;
-  justify-content: space-between; /* Distribui o espaço entre os itens */
-  align-items: flex-start; /* Alinha os itens no topo */
-}
-
-.donation-section {
-  flex: 1; /* Permite que esta seção ocupe o espaço disponível */
-  background-color: #222;
-  padding: 20px; /* Adiciona algum espaçamento interno */
-}
-
-.text-section {
-  flex: 1; /* Permite que esta seção ocupe o espaço disponível */
-  margin-left: 20px; /* Adiciona espaçamento entre as seções */
-}
-
-.text-section p {
-  margin: 0; /* Remove a margem padrão do parágrafo */
-}
