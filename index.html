@@ -127,6 +127,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right text-uppercase">
             <li><a href="#home">Início</a></li>
+            <li><a href="#divider">Ações</a></li>
             <li><a href="#feature">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
             <!-- <li><a href="#contact">Contato</a></li> -->
@@ -501,10 +502,17 @@
         <br>
       </div>
     </div>
-    
+    <button style="background-color:#9D0000; color: white;" type="button" class="btn btn-lg btn-block" onclick="redirectToWhatsapp()">Doar Alimentos</button>
+
+<script>
+  function redirectToWhatsapp() {
+    window.location.href = "https://api.whatsapp.com/send/?phone=88997174664&text&type=phone_number&app_absent=0";
+  }
+</script>
   </div>
   </div>
 </section>
+
     <!-- end pricing -->
 
     <!-- start download -->
@@ -516,7 +524,7 @@
           <div class="row">
             <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
               <h2 class="text-uppercase">Entre em contato</h2>
-             <h5>Dai de comer a quem tem fome, e de beber a quem tem sede.</h5>
+             <h5>Dai de comer a quem tem fome, e de beber a quem tem sede.</h5><span>Mateus 25:35</span>
              <hr>
               <address>
                 <p>
